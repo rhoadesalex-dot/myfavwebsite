@@ -2,42 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Favorite Video Games </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Favorite Video Games</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
 
   <header>
-    <h1>My Favorite Video Games</h1>
+    <h1 class="page-title">My Favorite Video Games</h1>
+    <nav aria-label="Main navigation">
+      <a class="nav-link" href="index.html" aria-current="page">Home: my favorite video games</a>
+      <a class="nav-link" href="page2.html">Learn more about my favorite game genres</a>
+    </nav>
   </header>
 
   <main>
 
-    <section>
-      <h2>Hello!</h2>
-      <p>The topic that I am covering here are my personal favorite video games. This is beacuse I am a person that playes a lot of video games. I though that it would be a good chance for me to share what games I like. </p>
-      <p>This would be a good time for you to take time look over the games that I have on this site. this is because it might introduce you to a new game or game series that you might play in the future. </p>
-    </section>
+    <div class="flex-container">
 
-    <section>
-      <h2>Game Recomendations</h2>
-      <ul>
-        <li>Roblox</li>
-        <li>Mincraft</li>
-        <li>Overwatch</li>
-      </ul>
-    </section>
+      <section id="intro" class="content-section" aria-labelledby="intro-heading">
+        <h2 id="intro-heading">Hello!</h2>
+        <p>The topic that I am covering here are my personal favorite video games. This is beacuse I am a person that playes a lot of video games. I though that it would be a good chance for me to share what games I like. </p>
+        <p>This would be a good time for you to take time look over the games that I have on this site. this is because it might introduce you to a new game or game series that you might play in the future. </p>
+      </section>
 
-    <section>
-      <h2></h2>
-      <img src="images/maxresdefault.jpg" alt = "Overwatch" width="400">
-    </section>
+      <section id="recommendations" class="content-section" aria-labelledby="recommendations-heading">
+        <h2 id="recommendations-heading">Game Recomendations</h2>
+        <ul>
+          <li>Roblox</li>
+          <li>Minecraft</li>
+          <li>Overwatch</li>
+        </ul>
+      </section>
+
+      <section id="game-image" class="content-section" aria-labelledby="game-image-heading">
+        <h2 id="game-image-heading">Featured Game: Overwatch</h2>
+        <img src="images/maxresdefault.jpg" alt="Two Overwatch heroes posing on a sunny beach: Lúcio in a green and purple suit with goggles, and D.Va in a blue and pink suit winking and holding a pistol, with a large robot behind them." width="400">
+      </section>
+
+    </div>
 
   </main>
 
   <footer>
-    <a href="page2.html">Read more on Page 2</a>
+    <a class="footer-link" href="page2.html">Read more about my favorite game genres on Page 2</a>
   </footer>
 
 </body>
-</html>
+</html>>
