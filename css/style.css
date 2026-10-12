@@ -45,10 +45,11 @@ li {
   margin-bottom: 6px;
 }
 
-li:: marker{
-  color:#06d6a0
+li::marker {
+  color: #06d6a0;
   font-weight: bold;
 }
+
 
 img {
   display: block;
@@ -63,6 +64,17 @@ img {
 header {
   background:linear-gradient(135deg, #1a1c2e 0%, #2a1850 100%);
   border-bottom: 3px solid #7c3aed;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 16px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 a:focus-visible {
@@ -153,5 +165,3 @@ main.container {
     box-shadow: 0 0 10px #7c3aed;
   }
 }
-
-
