@@ -59,27 +59,14 @@ header {
   padding: 25px 0;
 }
 
-/* Navigation links in the header (contrast 8.9:1 on the header background) */
 nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px 28px;
+  gap: 10px 16px;
   padding: 0 16px;
 }
 
-.nav-link {
-  color: #06d6a0;
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-.nav-link[aria-current="page"] {
-  color: #ffd166;
-  text-decoration: none;
-}
-
-/* Visible keyboard focus for every link */
 a:focus-visible {
   outline: 3px solid #ffd166;
   outline-offset: 3px;
@@ -95,34 +82,32 @@ footer {
   margin-top: 30px;
 }
 
-/* Used on both <h1> tags (index.html and page2.html) */
 .page-title {
   letter-spacing: 3px;
   text-transform: uppercase;
   font-size: 1.8em;
 }
 
-/* Used on every <section> across both pages */
+main.container {
+  max-width: 900px;
+}
+
 .content-section {
   background-color: #161826;
   border: 1px solid #33355a;
   border-left: 4px solid #7c3aed;
   border-radius: 10px;
   padding: 20px 25px;
-  margin: 20px auto;
-  max-width: 750px;
+  margin: 0;
   box-shadow: 0 4px 12px #000000;
-  flex: 1 1 300px;
 }
 
-/* Used on the footer link on both pages */
 .footer-link {
   color: #06d6a0;
   text-decoration: underline;
   font-weight: bold;
   letter-spacing: 0.5px;
 }
-
 
 #intro {
   border-left-color: #06d6a0;
@@ -145,16 +130,6 @@ footer {
   border-left-color: #ffd166;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  max-width: 750px;
-  margin: 0 auto;
-  align-items: stretch;
-}
-
-/* ---------- Responsive: phones and small tablets (600px and narrower) ---------- */
 @media (max-width: 600px) {
   body {
     font-size: 16px;
@@ -174,30 +149,13 @@ footer {
     font-size: 1.2em;
   }
 
-  /* Stack the nav links and make them easy to tap */
   nav {
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
   }
 
-  .nav-link {
-    padding: 10px 8px;
-    text-align: center;
-  }
-
-  /* Single column with side margins instead of side-by-side cards */
-  .flex-container {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 12px;
-    padding: 0 12px;
-  }
-
-  /* flex-basis 300px would become a minimum height in a column layout, so reset it */
   .content-section {
-    flex: 0 1 auto;
-    margin: 0;
     padding: 14px 16px;
   }
 
