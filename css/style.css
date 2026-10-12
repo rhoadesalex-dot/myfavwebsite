@@ -20,6 +20,8 @@ h2 {
   font-family: "Orbitron", "Trebuchet MS", sans-serif;
   color: #06d6a0;
   text-shadow: 0 0 12px #7c3aed;
+  padding-bottom; 0.4em;
+  border-bottom: 2px dashed #33355a;
 }
 
 p {
@@ -43,6 +45,11 @@ li {
   margin-bottom: 6px;
 }
 
+li:: marker{
+  color:#06d6a0
+  font-weight: bold;
+}
+
 img {
   display: block;
   margin: 0 auto;
@@ -54,32 +61,14 @@ img {
 }
 
 header {
-  background-color: #1a1c2e;
+  background:linear-gradient(135deg, #1a1c2e 0%, #2a1850 100%);
   border-bottom: 3px solid #7c3aed;
-  padding: 25px 0;
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px 16px;
-  padding: 0 16px;
 }
 
 a:focus-visible {
   outline: 3px solid #ffd166;
   outline-offset: 3px;
   border-radius: 3px;
-}
-
-footer {
-  background-color: #1a1c2e;
-  border-top: 3px solid #06d6a0;
-  color: #cfd0e0;
-  text-align: center;
-  padding: 18px 0;
-  margin-top: 30px;
 }
 
 .page-title {
@@ -100,13 +89,24 @@ main.container {
   padding: 20px 25px;
   margin: 0;
   box-shadow: 0 4px 12px #000000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.footer-link {
-  color: #06d6a0;
-  text-decoration: underline;
-  font-weight: bold;
-  letter-spacing: 0.5px;
+.content-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px #7c3aed;
+}
+
+.btn {
+  font-family: "Orbitron", "Trebuchet MS", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 14px #7c3aed;
 }
 
 #intro {
@@ -135,10 +135,6 @@ main.container {
     font-size: 16px;
   }
 
-  header {
-    padding: 16px 0;
-  }
-
   .page-title {
     font-size: 1.3em;
     letter-spacing: 1px;
@@ -149,12 +145,6 @@ main.container {
     font-size: 1.2em;
   }
 
-  nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-  }
-
   .content-section {
     padding: 14px 16px;
   }
@@ -162,9 +152,6 @@ main.container {
   img {
     box-shadow: 0 0 10px #7c3aed;
   }
-
-  footer {
-    padding: 14px 12px;
-    margin-top: 20px;
-  }
 }
+
+
